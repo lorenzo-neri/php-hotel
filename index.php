@@ -92,6 +92,14 @@ $hotels = [
 
         <div class="container">
 
+            <form action="" method="POST">
+
+                <label for="parking">Parcheggio</label>
+                <input type="checkbox" name="parking" id="parking">
+                <button type="submit">Enter</button>
+
+            </form>
+
 
             <table class="table table-striped">
                 <thead>
@@ -103,7 +111,13 @@ $hotels = [
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($hotels as $key => $value) : ?>
+                    <?php
+                    #var_dump($_POST);
+                    if ($_POST) {
+                        # code...
+                    }
+                    foreach ($hotels as $key => $value) :
+                    ?>
                         <tr>
                             <td>
                                 <?= $value['name']; ?>
