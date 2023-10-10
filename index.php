@@ -55,6 +55,11 @@ $hotels = [
 ];
 
 
+/* 
+<?= === <?php echo
+*/
+
+
 
 ?>
 
@@ -74,16 +79,16 @@ $hotels = [
         <ul>
             <?php foreach ($hotels as $key => $value) : ?>
                 <li>
-                    <?php echo $value['name']; ?>
+                    <?= $value['name']; ?>
                     <ul>
                         <li>
-                            <?php echo $value['description']; ?>
+                            <?= $value['description']; ?>
                         </li>
                         <li>
-                            <?php echo 'voto ' . $value['vote'] . ' su 5' ?>
+                            <?= 'voto ' . $value['vote'] . ' su 5' ?>
                         </li>
                         <li>
-                            <?php echo $value['distance_to_center'] . ' km'; ?>
+                            <?= $value['distance_to_center'] . ' km'; ?>
                         </li>
                     </ul>
                 </li>
